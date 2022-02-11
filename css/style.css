@@ -1,0 +1,1074 @@
+/*====================
+ Start Global Style */
+ .loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 9999
+}
+
+.loader .spinner {
+  margin:25% auto;
+  width: 90px;
+  height: 90px;
+  border: 15px solid #fff;
+  border-top: 15px solid var(--main-color);
+  background-color: var(--main-color);
+  border-radius: 50%;
+  animation: spin 2s linear infinite
+}
+@keyframes spin {
+  0% {
+  transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ :root {
+  --main-color: orange
+ }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box
+}
+.container {
+  width: 1000px;
+  margin: 0 auto
+}
+.clearfix {
+  clear: both;
+}
+.btn {
+  border: 0;
+  background-color: transparent;
+  color: var(--main-color);
+  border-radius: 20px;
+  border: 1px solid var(--main-color);
+  padding: 10px 20px;
+}
+.btn:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  cursor: pointer;
+  transform: scaleX(1.1);
+  transition: transform 350ms ease-in-out;
+}
+img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: .5s ease-in-out
+}
+.liner {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: tahoma;
+}
+.liner:after {
+  content: '';
+  border-bottom: 3px solid var(--main-color);
+  width: 53px;
+  display: block;
+  margin:13px auto;
+}
+
+/*=================
+ Gadgets Tools 
+=================*/
+.Sethings  {
+  position: fixed;
+  top: 25%;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+  color: var(--main-color);
+  padding: 15px;
+  border-radius:0 10px 10px 0;
+  border: 1px solid #ccc;
+}
+.Sethings:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+}
+.color-menu {
+  position: fixed;
+  top: 25%;
+  left: 4%;
+  z-index: 10;
+  background-color: #fff;
+  color: var(--main-color);
+  border: 1px solid #ccc;
+  padding: 0 20px 20px;
+  border-radius: 10px;
+  display: none;
+}
+.color-menu span {
+  padding: 5px 15px;
+  margin: 5px
+}
+.color-menu span:hover {
+  cursor: pointer;
+}
+.color-menu span:nth-child(2) {
+  background-color: #ff085c;
+}
+.color-menu span:nth-child(3) {
+  background-color: #18dc9d;
+}
+.color-menu span:nth-child(4) {
+  background-color: deepskyblue;
+}
+.color-menu span:nth-child(5) {
+  background-color: orange;
+}
+.color-menu span:nth-child(6) {
+  background-color: gold;
+}
+.section-dots {
+    position: fixed;
+    top: 50%;
+    right: 1%;
+    color: var(--main-color);
+    text-align: center;
+    display: none;
+}
+.section-dots ul {
+ list-style: none;
+}
+.section-dots ul li a {
+    border: 2px solid var(--main-color);
+    margin: 5px;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: block;
+}
+.section-dots ul li a:hover {
+  background-color: var(--main-color)
+}
+.back-btn {
+  position: fixed;
+  bottom: 0;
+  right: 3%;
+  background-color: var(--main-color);
+  color: #fff;
+  padding:11px 15px;
+  border-radius:10px 10px 0 0;
+  cursor: pointer;
+  display: none;
+}
+.mobile-chat {
+  display: none
+}
+.chat {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 10%;
+    padding: 0;
+    width: 350px;
+    background-color: var(--main-color);
+    border-radius:10px 10px 0 0;
+    color: #fff
+}
+.chat .header {
+    border-radius: 10px 10px 0 0;
+    background-color: var(--main-color);
+    color: #fff;
+    overflow: hidden;
+}
+.chat:hover {
+  cursor: pointer;
+}
+.chat .status {
+  width: 49%;
+  padding: 12px;
+  float: left;
+  margin-left: 2%;
+}
+.chat .settings {
+  width: 49%;
+  padding: 12px;
+  text-align: right;
+  float: right
+}
+.chat .settings i {
+  font-size: 20px;
+}
+.chat form {
+  background-color: #fff;
+  padding: 5px;
+  margin: 0 auto;
+  position: relative;
+  display: none;
+}
+.chat form img {
+  margin-top: 5px;
+  width: 17%;
+  float: left;
+  height: 50px;
+  border-radius: 50%
+}
+.chat form p {
+  color: #f1f1f1;
+    width: 63%;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    background: var(--main-color);
+    padding: 12px;
+    border-radius: 0 22px;
+}
+.chat form .contact-area {
+  margin-top: 150px;
+  background-color: #F3F3F3;
+  height: 60px;
+  padding: 10px
+}
+.chat form .contact-area input {
+  display: block;
+  border: none;
+  width: 100%;
+  float: left;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 20px;
+  margin: 5px 0;
+  padding: 8px
+}
+.chat form .contact-area input:focus {
+  outline: none;
+}
+.chat form .contact-area button {
+  position: absolute;
+  right: 18px;
+  bottom: 17px;
+  border: 0;
+  background: transparent;
+  color: var(--main-color);
+  font-size: 25px;
+  border-radius: 50%;
+  transition: all .5s ease-in-out;
+  display: none;
+}
+.chat form .contact-area button:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  cursor: pointer;
+}
+/*
+ End Global Style
+=========================== */
+/*===========================
+ Start Header Area Style
+*/
+.mainHeader {
+  background: url(../img/header-bg.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover
+}
+.mainHeader .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%
+}
+.mainHeader .overlay .upperBar {
+  height: 0
+}
+.mainHeader .overlay .upperBar .logo {
+  text-align: left;
+  color: #fff;
+  float: left;
+  width: 40%
+}
+.mainHeader .overlay .upperBar button {
+  display: none
+}
+.mainHeader .overlay .upperBar button:hover {
+  cursor: pointer;
+}
+.title {
+  color: var(--main-color)
+}
+.mainHeader .overlay .upperBar .links {
+  text-align: right;
+  float: right;
+  width: 60%
+}
+.mainHeader .overlay .upperBar .links ul{
+  list-style: none
+}
+.mainHeader .overlay .upperBar .links ul li {
+  display: inline-block;
+  padding: 10px
+}
+.mainHeader .overlay .upperBar .links ul li a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 700;
+  transition: all .5s ease-in-out
+}
+.mainHeader .overlay .upperBar .links ul li a:after {
+  margin-top: 10px;
+  display:block;
+  content: '';
+  border-bottom:3px solid var(--main-color);
+  transform: scaleX(0);
+  transition: transform 350ms ease-in-out;
+}
+.mainHeader .overlay .upperBar .links ul li a:hover{
+  color: var(--main-color)
+}
+.mainHeader .overlay .upperBar .links ul li a:hover:after {
+   transform: scaleX(1);
+ }
+.mainHeader .overlay .intro {
+  padding-top: 350px; 
+  color: #fff;
+  text-align: center
+}
+.mainHeader .overlay .intro h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.mainHeader .overlay .intro #typed {
+  font-size: 20px;
+  color: #fff
+}
+.mainHeader .overlay .intro .typed {
+  color: var(--main-color);
+  font-size: 26px;
+}
+.mainHeader .overlay .intro button {
+  margin-top: 80px;
+  font-family: tahoma;
+}
+.mainHeader .overlay .intro button:hover {
+  cursor: pointer;
+}
+/*
+ End Header Area Style
+=========================== */
+/*===========================
+ Start About Section Area Style
+*/
+#about {
+  text-align: center;
+  padding: 10px 10px;
+  margin: 20px 0
+}
+#about h2:after {
+    margin-left: 18px;
+    margin-top: 10px;
+    content: '';
+    border-bottom: 3px solid var(--main-color);
+    width: 44px;
+    display: block;
+}
+#about img {
+  width: 35%;
+  height: 200px;
+  float:left
+}
+#about .content {
+  text-align: left;
+  margin:0 0 0 5%;
+  width: 60%;
+  float: left;
+}
+/*
+ End About Section Area Style
+=========================== */
+/*===========================
+ Start Servies Section Area Style
+*/
+#servies {
+  margin-top: 30px;
+  background: #f2f2f2; 
+  padding: 30px 0;
+  overflow: hidden;
+  text-align: center
+}
+#servies .para {
+  width: 50%;
+  margin:0 auto 15px;
+}
+#servies .col {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 30%;
+  margin: 5px 1.66%;
+  padding: 20px;
+  float: left;
+}
+#servies .col:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  transform: scale(.95);
+}
+#servies .col:hover i {
+  color: #fff
+}
+#servies .col i {
+  font-size: 40px;
+  color: var(--main-color);
+}
+#servies .col h3 {
+  font-weight: normal;
+}
+/*
+ End Servies Section Area Style
+=========================== */
+/*===================================
+ Start Portfilio Section Area Style */
+#portfilio { 
+  padding: 30px 0 0;
+  clear: both;
+  text-align: center
+}
+#portfilio p {
+  width: 50%;
+  margin: auto;
+}
+#portfilio .gallery {
+  margin: 20px 0;
+}
+#portfilio .gallery .img {
+  margin: 0;
+  overflow: hidden;
+  width: 33%;
+  height: 230px;
+  float: left;
+}
+/*
+ End Portfilio Section Area Style
+================================== */
+/*====================================
+ Start Customers Section Area Style */
+
+#customers {
+  margin-top: 30px;
+  text-align: center;
+  background-image: url(../img/customers.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#customers .overlay {
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 20px 10px;
+}
+#customers .overlay h2 {
+  margin-bottom: 120px
+}
+#customers .overlay .slider {
+  margin: 10px auto;
+  padding-top: 40px;
+  width: 800px;
+  height: 300px;
+  position: relative;
+}
+#customers .overlay .slider > div {
+  display: none
+}
+#customers .overlay .slider .active {
+  display: block
+}
+#customers .overlay .slider > div img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 2px solid var(--main-color); 
+} 
+#customers .overlay .slider > div p {
+  width: 60%;
+  margin:10px auto 20px;
+  color: #c3c3c3
+}
+#customers .overlay .slider > div h5 {
+  color: var(--main-color);
+  margin-top: 20px
+}
+/*
+ End Customers Section Area Style
+================================== */
+/*==============================
+ Start Team Section Area Style */
+#team {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+#team p {
+  width: 50%;
+  margin: auto;
+}
+#team .persons {
+  margin-top: 30px
+}
+#team .persons .card {
+  width: 24%;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  float:left;
+  padding: 10px;
+  margin: 0 3px;
+}
+#team .persons .card h3 {
+  color: var(--main-color);
+}
+#team .persons .card .social i {
+ margin: 0 8px
+}
+#team .persons .card:hover {
+  transform: translate(0,-5px);
+  transition: transform .5s ease-in-out;
+  box-shadow: 2px 5px 10px rgba(0,0,0,.1),-2px 5px 10px rgba(0,0,0,.1);
+  cursor: pointer;
+}
+#team .persons .card:hover h3,#team .persons .card:hover i {
+  font-weight: bold;
+  color: var(--main-color)
+}
+#team .persons .card:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: .5s ease-in-out
+}
+/*
+ End Team Section Area Style
+============================= */
+/*==============================
+ Start Contact Section Area Style */
+#contact {
+  padding: 25px 0;
+  background-color: var(--main-color);
+  overflow: hidden;
+  color: #fff
+}
+#contact .info {
+  width: 60%;
+  float: left;
+  padding: 10px
+}
+#contact .form {
+  width: 40%;
+  float: right;
+  padding: 10px;
+  position: relative;
+}
+#contact .form form input:focus,
+#contact .form form textarea:focus {
+  outline: none;
+}
+#contact .form form input:first-child,
+#contact .form form input:nth-child(2),
+#contact .form form input:nth-child(3),
+#contact .form form textarea {
+    width: 49%;
+    float: left;
+    border: 0;
+    background: transparent;
+    border: 1px solid #f1f1f1;
+    padding: 6px;
+    margin: 5px 0;
+    color: #fff;
+}
+#contact .form form input:first-child {
+  margin-right: 2%
+}
+#contact .form form input:nth-child(3){
+  width: 100%
+}
+#contact .form form textarea {
+  width: 100%;
+  height: 100px
+}
+#contact .form .btn {
+  color: var(--main-color);
+  background-color: #fff;
+  width: 100%;
+  border-radius: 0;
+  border: 2px solid #fff;
+  padding: 10px 25px;
+  transition: all .5s ease-in-out
+}
+#contact .form .btn:hover {
+  background-color: #f1f1f1;
+  color: var(--main-color)
+}
+/*
+ End Contact Section Area Style
+============================= */
+/*==============================
+ Start Footer Area Style */
+.footer {
+  background-color: #f1f1f1;
+  padding-top: 30px
+}
+.footer .logo {
+  width: 25%;
+  float: left;
+  margin-top: 10px
+}
+.footer .about {
+  width: 50%;
+  float: left;
+  margin-top: 20px
+}
+.footer .social {
+  width: 25%;
+  float: left;
+  text-align: right;
+  margin-top: 10px
+}
+.footer .social h5 {
+  text-align: left;
+  color: var(--main-color);
+  margin-left: 60px
+}
+.footer .social i {
+  color: var(--main-color);
+  margin: 0 10px;
+  font-size: 20px
+}
+.footer .bottom {
+  margin-top: 60px;
+  padding-bottom: 100px
+}
+.footer .bottom .rights {
+  width: 50%;
+  float: left;
+}
+.footer .bottom .nav {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+.footer .bottom .nav ul {
+  list-style: none;
+}
+.footer .bottom .nav ul li {
+  display: inline-block;
+  padding: 5px
+}
+.footer .bottom .nav ul li a ,
+.footer .bottom .rights p a{
+  color: #333;
+  text-decoration: none;
+}
+.footer .bottom .nav ul li a:hover,
+.footer .bottom .rights p a:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+/*
+ End Footer Area Style
+============================= */
+
+/*========================
+ Start Responsive Style */
+
+ /* Small Screens */
+@media (min-width: 320px) and (max-width: 767px) {
+  /*========================
+   Start Globals Style 
+  .loader .spinner {
+    margin:50% auto;
+    width: 70px;
+    height: 70px;
+  }*/
+ .container {
+    width: 80%;
+  }
+  /*=================
+   Gadgets Tools 
+  =================*/
+  .Sethings  {
+    top: 20%
+  }
+  .color-menu {
+    top: 28%;
+    left: 1%
+  }
+  .section-dots {
+      display: none;
+  }
+  .back-btn {
+    bottom: 2%;
+    right: 4%;
+    border-radius: 50%
+  }
+  .mobile-chat {
+    display: block;
+    bottom: 2%;
+    left: 4%;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50%;
+    position: fixed;
+  }
+  .mobile-chat:hover {
+    cursor: pointer;
+  }
+  .chat {
+    display: none;
+    left: 3%;
+    bottom: 12%;
+    border-radius: 10px
+  }
+  .chat:hover {
+    cursor: none
+  }
+  /*========================
+   Start Header Style */
+ .mainHeader .overlay .upperBar {
+  background-color: #333;
+  height: 60px
+ }
+ .mainHeader .overlay .upperBar .logo {
+    padding-left: 20px;
+    width: 50%
+  }
+  .mainHeader .overlay .upperBar button {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  background: transparent;
+  color: var(--main-color);
+  border: 0;
+  font-size: 25px;
+ }
+  .mainHeader .overlay .upperBar .links {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+    float: left;
+    display: none;
+    text-align: left;
+    background-color: #333
+  }
+  
+  .mainHeader .overlay .upperBar .links ul{
+    list-style: none;
+    padding-left: 10%;
+  }
+  .mainHeader .overlay .upperBar .links ul li,.mainHeader .overlay .upperBar .links ul li a {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .mainHeader .overlay .upperBar .links ul li a {
+    padding: 8px 18px;
+    border-radius: 6px
+
+  }
+  .mainHeader .overlay .upperBar .links ul li a:after {
+    content: none;
+  }
+  .mainHeader .overlay .upperBar .links ul li a:hover{
+    color: #fff
+  }
+  .mainHeader .overlay .upperBar .links ul li a:hover:after {
+     transform: none;
+   }
+   .mainHeader .overlay .intro {
+     margin: 0;
+     padding-top: 350px
+   }
+  .mainHeader .overlay .intro h1 {
+    font-size: 30px
+  }
+  /*
+   End Header Area Style
+  =========================== */
+  /*===========================
+ Start About Section Area Style */
+  #about img {
+    width: 100%;
+    height: 300px
+  }
+  #about .content {
+    width: 90%
+  }
+  /*
+   End About Section Area Style
+  =========================== */
+  /*===========================
+ Start Servies Section Area Style */
+  #servies {
+    margin-top: 40px; 
+    padding: 40px 0
+  }
+  #servies .para {
+  width: 70%
+ }
+  #servies .col {
+    border-radius: 8px;
+    width: 100%;
+    margin: 5px 0;
+  }
+  #servies .col h3 {
+    font-size: 24px
+  }
+  #servies .col i {
+    font-size: 50px
+  }
+  /*
+   End Servies Section Area Style
+  =========================== */
+  /*===================================
+ Start Portfilio Section Area Style */
+  #portfilio p {
+    width: 70%;
+    margin: auto;
+  }
+  #portfilio .gallery {
+    margin: 10px 0;
+  }
+  #portfilio .gallery .img {
+    margin:4px 15%;
+    width: 70%;
+  }
+  /*
+   End Portfilio Section Area Style
+  ================================== */
+  /*==============================
+  Start Team Section Area Style */
+  #team p {
+  width: 70%
+ }
+  #team .persons .card {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 10px;
+  }
+  #team .persons .card h3 {
+    font-weight: bold;
+  }
+  #team .persons .card .social i {
+   font-size: 24px
+  }
+  /*
+   End Team Section Area Style
+  ============================= */
+  /*==============================
+   Start Contact Section Area Style */
+  #contact {
+  padding: 35px 0;
+  }
+  #contact .info {
+    width: 100%;
+  }
+  #contact .form {
+    width: 100%
+  }
+  /*==============================
+   Start Footer Area Style */
+  .footer .logo {
+    width: 100%;
+    text-align: center
+  }
+  .footer .about {
+    width: 100%;
+    text-align: center
+  }
+  .footer .social {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px
+  }
+  .footer .social h5 {
+    display: none
+  }
+  .footer .bottom .rights {
+    width: 100%;
+    text-align: center
+  }
+  .footer .bottom .nav {
+    width: 100%;
+    text-align: center
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 767px) and (max-width: 1023px) {
+  /*========================
+   Start Globals Style */
+    .container {
+    width: 80%;
+  }
+  /*=================
+   Gadgets Tools 
+  =================*/
+  .Sethings  {
+    top: 20%
+  }
+  .color-menu {
+    top: 28%;
+    left: 1%
+  }
+  .section-dots {
+      display: none;
+  }
+  .back-btn {
+    bottom: 2%;
+    right: 4%;
+    border-radius: 50%
+  }
+  .mobile-chat {
+    display: block;
+    bottom: 2%;
+    left: 4%;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50%;
+    position: fixed;
+  }
+  .mobile-chat:hover {
+    cursor: pointer;
+  }
+  .chat {
+    display: none;
+    left: 3%;
+    bottom: 12%;
+    border-radius: 10px
+  }
+  .chat:hover {
+    cursor: none
+  }
+  /*========================
+   Start Header Style */
+  .mainHeader .overlay .upperBar {
+    height: 60px;
+    background-color: #333
+    
+  }
+  .mainHeader .overlay .upperBar .logo {
+    padding-left: 20px;
+    width: 50%
+  }
+  .mainHeader .overlay .upperBar button {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  background: transparent;
+  color: var(--main-color);
+  border: 0;
+  font-size: 25px;
+ }
+  .mainHeader .overlay .upperBar .links {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+    float: left;
+    display: none;
+    text-align: left;
+    background-color: #333
+  }
+  
+  .mainHeader .overlay .upperBar .links ul{
+    list-style: none;
+    padding-left: 10%;
+  }
+  .mainHeader .overlay .upperBar .links ul li,.mainHeader .overlay .upperBar .links ul li a {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .mainHeader .overlay .upperBar .links ul li a {
+    padding: 8px 18px;
+    border-radius: 6px
+
+  }
+  .mainHeader .overlay .upperBar .links ul li a:after {
+    content: none;
+  }
+  .mainHeader .overlay .upperBar .links ul li a:hover{
+    color: #fff
+  }
+  .mainHeader .overlay .upperBar .links ul li a:hover:after {
+     transform: none;
+   }
+   .mainHeader .overlay .intro {
+     margin: 0;
+     padding-top: 350px
+   }
+  .mainHeader .overlay .intro h1 {
+    font-size: 30px
+  }
+  /*
+   End Header Area Style
+  =========================== */
+  /*===========================
+ Start Servies Section Area Style */
+  #servies .para {
+  width: 70%
+ }
+  #servies .col {
+    border-radius: 8px;
+    width: 48%;
+    margin: 5px;
+  }
+  /*
+   End Servies Section Area Style
+  =========================== */
+  /*==============================
+  Start Team Section Area Style */
+  #team p {
+  width: 70%
+ }
+  #team .persons .card {
+    width: 46%;
+    margin: 20px 10px;
+  }
+  #team .persons .card h3 {
+    font-weight: bold;
+  }
+  #team .persons .card .social i {
+   font-size: 24px
+  }
+  /*==============================
+   Start Contact Section Area Style */
+  #contact {
+  padding: 35px 0;
+  }
+  #contact .info {
+    width: 100%;
+  }
+  #contact .form {
+    width: 100%
+  }
+}
